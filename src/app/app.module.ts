@@ -3,18 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatCardModule } from '@angular/material/card';
-import { FormsModule } from '@angular/forms';
+import { FibonacciModule } from './fibonacci/fibonacci.module';
+import { StringComAModule } from './string-com-a/string-com-a.module';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
-    MatCardModule,
-    FormsModule,
+    FibonacciModule,
+    StringComAModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

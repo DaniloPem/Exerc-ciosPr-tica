@@ -1,0 +1,19 @@
+<mat-toolbar>
+  <span>2. STRING COM A</span>
+</mat-toolbar>
+<mat-card appearance="outlined">
+  <mat-card-header>
+    <mat-card-subtitle
+      >Escreva um texto para saber se tem ou não a letra "a".</mat-card-subtitle
+    >
+  </mat-card-header>
+  <mat-card-actions>
+    <input
+      type="text"
+      placeholder="Insere o texto"
+      [(ngModel)]="textoInserido"
+    />
+    <button mat-button (click)="acharLetraA()">Achar letra "a"</button>
+    <span style="color: white">{{ result }}</span>
+  </mat-card-actions>
+</mat-card>

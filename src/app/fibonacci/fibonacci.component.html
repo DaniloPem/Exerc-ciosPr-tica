@@ -1,0 +1,20 @@
+<mat-toolbar>
+  <span>1. FIBONACCI</span>
+</mat-toolbar>
+<mat-card appearance="outlined">
+  <mat-card-header>
+    <mat-card-subtitle
+      >Escreva um número para saber se pertence ou não a sequência de
+      Fibonacci</mat-card-subtitle
+    >
+  </mat-card-header>
+  <mat-card-actions>
+    <input
+      type="number"
+      placeholder="Insere o número"
+      [(ngModel)]="numeroInserido"
+    />
+    <button mat-button (click)="acharNumero()">Achar número</button>
+    <span style="color: white">{{ result }}</span>
+  </mat-card-actions>
+</mat-card>
